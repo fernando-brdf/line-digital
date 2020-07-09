@@ -1,0 +1,98 @@
+.nav-comp nav {
+    background-color: var(--black) !important;
+}
+
+.nav-comp nav div ul li a {
+    color: var(--white) !important;
+    font-size: 1.15rem;
+    margin-left: 6px;
+}
+
+.nav-comp .navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+@media (min-width: 992px) {
+    .nav-comp .nav-link {
+        padding: 5px .1rem !important;
+        border-bottom: 1px solid var(--white) !important;
+    }
+    .nav-comp .nav-link:hover {
+        animation-name: border-white-yellow;
+        animation-duration: .8s;
+        border-color: var(--yellow) !important;
+        color: var(--yellow) !important;
+    }
+    @keyframes border-white-yellow {
+        0% {
+            transform: rotate(0);
+        }
+        15% {
+            transform: rotate(4deg);
+        }
+        30% {
+            transform: rotate(-4deg);
+        }
+        45% {
+            transform: rotate(3deg);
+        }
+        60% {
+            transform: rotate(-3deg);
+        }
+        75% {
+            transform: rotate(2deg);
+        }
+        90% {
+            transform: rotate(-2deg);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-brand img {
+        width: 241px !important;
+        height: 39px !important;
+    }
+}
+
+.modal-body {
+    background-color: var(--black);
+}
+
+.modal-body form {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-body .img {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.modal-body img {
+    width: 241px;
+    height: 39px;
+}
+
+.modal-body input {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    border-color: black;
+}
+
+::-webkit-input-placeholder {
+    color: white !important;
+    background-color: rgb(58, 58, 58);
+
+    font: 12px verdana, arial, sans-serif;
+}
+
+.modal-body input:hover {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}

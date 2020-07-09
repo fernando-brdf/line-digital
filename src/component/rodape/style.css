@@ -1,0 +1,52 @@
+.rodape {
+    width: 100%;
+    height: max-content;
+    background-color: var(--black);
+    margin-top:30px;
+}
+
+.rodape .container {
+    max-width: 760px;
+    padding: 0 10px 15px 10px;
+}
+
+.rodape .row a {
+    margin-left: 5px;
+}
+.rodape p {
+    color: var(--white);
+}
+.rodape .contados {
+    padding-top: 25px;
+    margin-bottom: 16px;
+    color: var(--yellow);
+}
+.rodape .link{
+    color: var(--white);
+}
+
+.rodape .container-fim {
+    color: var(--yellow);
+    padding-top: 48px;
+    margin-bottom: 2px;
+}
+.rodape .txt-fim{
+    margin-bottom:2px;
+}
+
+.rodape .social {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+    color:  var(--black);
+}
+
+.rodape .linkedin {
+    background-color: #0e76a8;
+}
+.rodape .instagram {
+    background-color: #3f729b ;
+}
+.rodape .email {
+    background-color: #D44638;
+}

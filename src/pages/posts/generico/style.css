@@ -1,0 +1,32 @@
+
+.posts .conteudo-topo {
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 40px
+}
+
+.posts .titulo {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    transform: translate(0, -50%);
+    padding: 12px 25px;
+    font-weight: 900;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 3.0rem;
+    line-height: 1.15;
+    color: #f8f9fa!important;
+}
+
+
+@media(max-width:700px){
+    .posts .titulo{
+        font-size: 2rem !important;
+    }
+}
+@media(max-width:600px){
+    .posts .titulo{
+        font-size: 1.5rem !important;
+    }
+}
