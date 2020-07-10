@@ -14,7 +14,7 @@ export default function RodapeComponent() {
                         <p className="contados">Criadores</p>
                         <div className="row">
                             <div className="col col-2">
-                                <a href="!#"><AiOutlineLinkedin className='rounded-circle social linkedin' /></a>
+                                <a href="#something"><AiOutlineLinkedin className='rounded-circle social linkedin' /></a>
                             </div>
                             <div className="col col-10">
                                 <a className="link" href="https://www.linkedin.com/in/fernando-araújo-a33304182">https://www.linkedin.com/in/fernando-araújo-a33304182</a>
@@ -22,7 +22,7 @@ export default function RodapeComponent() {
                         </div>
                         <div className="row">
                             <div className="col col-2">
-                                <a href="!#"><AiOutlineInstagram className='rounded-circle social instagram' /></a>
+                                <a href="#something"><AiOutlineInstagram className='rounded-circle social instagram' /></a>
                             </div>
                             <div className="col col-10">
                                 <a className="link" href="https://www.instagram.com/_menezeslobo/">https://www.instagram.com/_menezeslobo/</a>
@@ -33,7 +33,7 @@ export default function RodapeComponent() {
                         <p className="contados">Contato</p>
                         <div className="row">
                             <div className="col col-2">
-                                <a href="!#"><AiTwotoneMail className='rounded-circle social email' /></a>
+                                <a href="#something"><AiTwotoneMail className='rounded-circle social email' /></a>
                             </div>
                             <div className="col col-10">
                                 <a className="link" href="mailto:linedigitalmkt@gmail.com">linedigitalmkt@gmail.com</a>

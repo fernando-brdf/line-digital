@@ -9,7 +9,7 @@ export default function Routes(){
         <BrowserRouter>
             <Switch>
                 <Route path='/' exact component={Main}/>
-                <Route path='/generico'exact  component={Generico}/>
+                <Route path='/posts/marketing-digital'exact  component={Generico}/>
             </Switch>
         </BrowserRouter>
     );

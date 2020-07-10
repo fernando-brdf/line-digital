@@ -8,7 +8,7 @@ export default function NavBarComponent() {
     return (
         <div className="nav-comp">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a href="!#" className="navbar-brand">
+                <a href="#something" className="navbar-brand">
                     <img src="/img/logo-bar.png" /* width="30" height="30" */
                         className="d-inline-block align-top"
                         alt="Line digital marketing" />
@@ -20,7 +20,7 @@ export default function NavBarComponent() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item mr-2">
-                            <a className="nav-link botao" href="!#"
+                            <a className="nav-link botao" href="#something"
                                 data-toggle="modal"
                                 data-target="#login-modal">
                                 Login
@@ -28,7 +28,7 @@ export default function NavBarComponent() {
                             </a>
                         </li>
                         <li className="nav-item botao">
-                            <a href="!#" className="nav-link" >
+                            <a href="#something" className="nav-link" >
                                 Cursos
                                 <MdAddShoppingCart className="ml-2" />
                             </a>
