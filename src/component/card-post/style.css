@@ -1,0 +1,17 @@
+.card-item-comp {
+    width: 18rem !important;
+    padding: 0 !important;
+}
+
+@media(max-width:576px) {
+    .card-item-comp {
+        width: max-content;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        margin-bottom: 12px;
+    }
+}
+
+.card-item-comp h5{
+    text-transform: uppercase;
+}

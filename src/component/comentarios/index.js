@@ -33,7 +33,6 @@ export default function ComentariosComponent(props) {
                 <div className="text-center bt-mais botao botao-animacao" onClick={(e) => clickMaisComentarios(e)}>
                     <p>Mais comentários</p>
                     <IoIosArrowDown className="bt-mais-icon" />
-
                 </div>
 
 
@@ -49,8 +48,8 @@ export default function ComentariosComponent(props) {
         e.preventDefault()
 
         const novosComentarios = comentariosState.map(c => c);
-        novosComentarios.push({ nome: "aFernando Jorge Araujo da Silva", comentario: "Muito bom, continue assim mesmo👈🏼" },
-            { nome: "bFernando Jorge Araujo da Silva", comentario: "Muito bom, continue assim mesmo👈🏼" })
+        novosComentarios.push({ nome: "@marcelodantas", comentario: "Parabéns pelo trabalho." },
+            { nome: "@anacarolina29", comentario: "Gostei bastante do post." })
 
         setComentariosState(novosComentarios);
     }

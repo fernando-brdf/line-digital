@@ -1,5 +1,6 @@
 const Helper = {
     href(){
+        // eslint-disable-next-line
         return 'javascript:void(0)';
     }
 

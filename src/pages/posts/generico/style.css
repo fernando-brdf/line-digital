@@ -35,20 +35,6 @@
     margin-left: auto;
 }
 
-.posts .card {
-    width: 18rem;
-    padding: 0;
-}
-
-@media(max-width:576px) {
-    .posts .card {
-        width: max-content;
-        margin-right: auto !important;
-        margin-left: auto !important;
-        margin-bottom: 12px;
-    }
-}
-
 .posts .titulo-relacionados {
     padding-top: 60px !important;
     padding-bottom: 30px !important;
@@ -86,6 +72,31 @@
     }
 }
 
-.posts .conteudo-topo{
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+.posts .conteudo-topo {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important;
+}
+
+.posts .container-palavra-chave {
+    font-size: 13px;
+    line-height: 18px;
+    font-size: .6em;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.posts .palavra-chave {
+    background-color: var(--black);
+    color: var(--yellow);
+    margin: 2px;
+    padding: 3px 14px 6px 14px;
+    border-radius: 20px;
+}
+
+.posts li {
+    display: inline-flex !important;
+}
+
+.posts ul {
+    list-style: none outside none;
+    padding: 0;
 }

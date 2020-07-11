@@ -1,0 +1,18 @@
+.list-posts .bt-mais-posts {
+    margin-top: 50px;
+}
+
+.list-posts .bt-mais-posts p {
+    margin-bottom: 4px;
+    line-height: 0;
+}
+
+.list-posts .bt-mais-icon {
+    width: 30px;
+    height: auto;
+    color: #555555;
+}
+
+.list-posts .row{
+    margin-top: 10px;
+}

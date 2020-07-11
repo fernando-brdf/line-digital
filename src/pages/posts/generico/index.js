@@ -1,17 +1,22 @@
 import React from 'react';
+import './style.css'
+
+import { useHistory } from 'react-router-dom'
 import NavBarComponent from '../../../component/navbar';
 import RodapeComponent from '../../../component/rodape';
-import './style.css'
 import ComentariosComponent from '../../../component/comentarios';
+import CardPostComponent from '../../../component/card-post';
 
 export default function Generico() {
 
+    const history = useHistory();
+
     const comentarios = [
-        { nome: "Fernando Jorge", comentario: "Muito bom, continue assim 👈🏼" },
-        { nome: "Joao Jorge", comentario: "Você pode setar o a propriedade length para truncar um array a qualquer momento. Quando você extende um array mudando sua propriedade length, o numero de elementos atuais não é incrementado; por exemplo, se você setar o tamanho para 3 quando ele é atualmente 2, o array continua somente com 2 elementos. Assim, a propriedade length não diz nada sobre o tamanho de valores definidos no array" },
-        { nome: "Maria Jorge", comentario: "Muito bom, continue assim 👈🏼" },
-        { nome: "Fredi Jorge", comentario: "Você pode setar o a propriedade length para truncar um array a qualquer momento. Quando você extende um array mudando sua propriedade length, o numero de elementos atuais não é incrementado; por exemplo, se você " },
-        { nome: "Joelma Jorge", comentario: "Muito bom, continue assim 👈🏼" }
+        { nome: "@leando22", comentario: "Massa." },
+        { nome: "@fancisco25", comentario: "Muito legal o post." },
+        { nome: "@mariaferreira", comentario: "Muito bom, continue assim 👈🏼" },
+        { nome: "@fredi7845", comentario: "Queria um post sobre copy" },
+        { nome: "@linedigitalmarketing", comentario: "@fredi7845, está saindo do forno um post sobre Copywriting, fique de olho nos nossos posts." }
     ]
 
     const post = {
@@ -66,6 +71,26 @@ export default function Generico() {
                     </aside>
                 </section>
 
+                <section className="container-palavra-chave">
+                    <ul>
+                        <li className='botao' onClick={() => history.push('/posts?palavra-chave')}>
+                            <p className="palavra-chave col">marketing de afiliados</p>
+                        </li>
+                        <li className='botao' onClick={() => history.push('/posts?palavra-chave')}>
+                            <p className="palavra-chave col">AFILIADO</p>
+                        </li>
+                        <li className='botao' onClick={() => history.push('/posts?palavra-chave')}>
+                            <p className="palavra-chave col">Hotmart</p>
+                        </li>
+                        <li className='botao' onClick={() => history.push('/posts?palavra-chave')}>
+                            <p className="palavra-chave col">Monetizze</p>
+                        </li>
+                        <li className='botao' onClick={() => history.push('/posts?palavra-chave')}>
+                            <p className="palavra-chave col">marketing digital</p>
+                        </li>
+                    </ul>
+                </section>
+
                 <PostRelacionados></PostRelacionados>
 
                 <section>
@@ -90,21 +115,18 @@ function PostRelacionados() {
             <h4 className="titulo-relacionados">Posts relacionados</h4>
 
             <div className="row relacionados">
-                <div className="card botao col-sm mr-2 botao-foco shadow-lg">
-                    <img className="card-img-top" src="https://picsum.photos/286/180?grayscale" alt="Imagem de capa do card" />
-                    <div className="card-body">
-                        <h5 className="card-title">O QUE É O MARKETING DE AFILIADOS?</h5>
-                        <p className="card-text">O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...</p>
-                    </div>
-                </div>
+                <CardPostComponent
+                    titulo={"Mas O QUE É O MARKETING DE AFILIADOS?"}
+                    texto={"O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de..."}
+                    link={"o-que-e-o-marketing-de-afiliados"} 
+                    grayscale={true}
+                    />
 
-                <div className="card botao col-sm ml-2 botao-foco shadow-lg">
-                    <img className="card-img-top" src="https://picsum.photos/286/180" alt="Imagem de capa do card" />
-                    <div className="card-body">
-                        <h5 className="card-title">O QUE É O MARKETING DE AFILIADOS?</h5>
-                        <p className="card-text">O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...</p>
-                    </div>
-                </div>
+
+                <CardPostComponent
+                    titulo={"Mas O QUE É O MARKETING DE AFILIADOS?"}
+                    texto={"O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de..."}
+                    link={"o-que-e-o-marketing-de-afiliados"} />
             </div>
         </section>
     )
