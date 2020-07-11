@@ -10,7 +10,7 @@ export default function Routes(){
         <BrowserRouter>
             <Switch>
                 <Route path='/' exact component={Main}/>
-                <Route path='/posts/marketing-digital' component={Generico}/>
+                <Route path='/posts/o-que-e-o-marketing-de-afiliados' component={Generico}/>
                 <Route path='/posts'exact  component={Generico}/>
                 <Route path='*'exact  component={PagNaoEncontrada}/>
             </Switch>

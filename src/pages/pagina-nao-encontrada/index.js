@@ -1,10 +1,13 @@
-import RodapeComponent from "../../component/rodape";
-
 import React from 'react';
 import './style.css';
+
+import RodapeComponent from "../../component/rodape";
 import Helper from '../../helper'
+import { useHistory } from "react-router-dom";
+
 
 export default function PagNaoEncontrada() {
+    const history = useHistory();
 
     return (
         <div className="pag-n">
@@ -54,10 +57,10 @@ export default function PagNaoEncontrada() {
 
             <div className="conteudo">
                 <h1>Erro 404 - Página não encontrada</h1>
-                <p>Ir para <a href="/">Home</a></p>
+                <p>Ir para <a href={Helper.href()} onClick={() => history.push('/')}>Home</a></p>
             </div>
             <RodapeComponent reduzido="true" />
-            
+
         </div>
     );
 }
