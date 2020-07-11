@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Main from './pages/main';
 import Generico from './pages/posts/generico';
+import PagNaoEncontrada from './pages/pagina-nao-encontrada';
 
 export default function Routes(){
     return(
@@ -11,6 +12,7 @@ export default function Routes(){
                 <Route path='/' exact component={Main}/>
                 <Route path='/posts/marketing-digital' component={Generico}/>
                 <Route path='/posts'exact  component={Generico}/>
+                <Route path='*'exact  component={PagNaoEncontrada}/>
             </Switch>
         </BrowserRouter>
     );

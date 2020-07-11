@@ -1,0 +1,40 @@
+.comentarios-comp {
+    margin-top: 60px;
+}
+
+.comentarios-comp .comentar {
+    padding-top: 45px
+}
+
+.comentarios-comp .comentar p {
+    font-size: 1rem;
+}
+
+.comentarios-comp .comentar h4 {
+    margin-bottom: 2px;
+    margin-left: 0px !important;
+}
+
+.comentarios-comp .comentarios {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid rgba(206, 212, 218, .8);
+    border-radius: .25rem;
+}
+
+.comentarios-comp form {
+    margin-top: 25px;
+}
+
+
+.comentarios-comp .bt-mais p {
+    margin-bottom: 4px;
+    line-height: 0;
+}
+
+.comentarios-comp .bt-mais-icon {
+    width: 30px;
+    height: auto;
+    color: #555555;
+}

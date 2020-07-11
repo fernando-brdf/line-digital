@@ -1,0 +1,13 @@
+.pag-n{
+    height: 100% !important;
+}
+
+.pag-n .rodape{
+    position: absolute;
+    bottom: 0;
+}
+
+.pag-n .conteudo{
+    padding-top: 60px;
+    text-align: center;
+}
