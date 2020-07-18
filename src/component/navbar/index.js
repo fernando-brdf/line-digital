@@ -136,21 +136,22 @@ function ModalCursos() {
                         <h4 className="text-center"><span role="img" aria-label='emoji'>😵</span> Fórmula Desperte Milionário</h4>
                         <br />
                         <p>Treinamento de Marketing Digital e vendas online para afiliados iniciantes e avançados: o <strong>FDM</strong> conta com mais de <span role="img" aria-label='emoji'>😍</span><strong>100 aulas práticas</strong><span role="img" aria-label='emoji'>😍</span> divididas em módulos em um <strong>PASSO A PASSO</strong> que tem como objetivo ensinar pessoas comuns a iniciar no mercado digital.
-                            <br />Principais conteúdos:
-                            <ul>
-                                <li>Como desenvolver uma mentalidade empreendedora.</li>
-                                <li>Como se cadastrar nas plataformas de venda.</li>
-                                <li>Como gerar tráfego nas principais redes sociais e conseguir clientes.</li>
-                                <li>Como montar uma estrutura básica de vendas nas redes sociais.</li>
-                                <li> Como criar um canal e posicionar bem os seus vídeos no YouTube.</li>
-                                <li> Como chamar a atenção do seu público no YouTube.</li>
-                                <li> Como desenvolver a persuasão para conversar com os seus clientes.</li>
-                            </ul> Além de conteúdos avançados:
-                                <ul>
-                                <li>Como criar campanhas profissionais usando Facebook Ads.</li>
-                                <li>Como fazer campanhas de e-mail Marketing.</li>
-                            </ul>.Temos também grupos <strong>VIP</strong> de <strong>suporte</strong> no TELEGRAM e aulas ao vivo durante a semana para tirar dúvidas e ajudar alunos e afiliados!
-                        </p>
+                            <br />Principais conteúdos:</p>
+                        <ul>
+                            <li><p className='mb-0'>Como desenvolver uma mentalidade empreendedora.</p></li>
+                            <li><p className='mb-0'>Como se cadastrar nas plataformas de venda.</p></li>
+                            <li><p className='mb-0'>Como gerar tráfego nas principais redes sociais e conseguir clientes.</p></li>
+                            <li><p className='mb-0'>Como montar uma estrutura básica de vendas nas redes sociais.</p></li>
+                            <li><p className='mb-0'>Como criar um canal e posicionar bem os seus vídeos no YouTube.</p></li>
+                            <li><p className='mb-0'>Como chamar a atenção do seu público no YouTube.</p></li>
+                            <li><p className='mb-0'>Como desenvolver a persuasão para conversar com os seus clientes.</p></li>
+                        </ul>
+                        <p>Além de conteúdos avançados:</p>
+                        <ul>
+                            <li><p className='mb-0'>Como criar campanhas profissionais usando Facebook Ads.</p></li>
+                            <li><p className='mb-0'>Como fazer campanhas de e-mail Marketing.</p></li>
+                        </ul>
+                        <p>Temos também grupos <strong>VIP</strong> de <strong>suporte</strong> no TELEGRAM e aulas ao vivo durante a semana para tirar dúvidas e ajudar alunos e afiliados!</p>
                         <p className="text-center"><span role="img" aria-label='emoji'>👉</span> <a href='https://p.eduzz.com/383261?utm_source=cursos&a=60139752' target='_blank' rel='noopener noreferrer'>Clique aqui </a> e saiba mais.</p>
                         <p className="text-center"><span role="img" aria-label='emoji'>💰</span> <a href='https://sun.eduzz.com/383261?utm_source=cursos&a=60139752' target='_blank' rel='noopener noreferrer'>Adquira o seu aqui!</a> <span role="img" aria-label='emoji'>💰</span></p>
                         <br />
