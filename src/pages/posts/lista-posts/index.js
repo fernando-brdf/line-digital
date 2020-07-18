@@ -1,46 +1,70 @@
 import React, { useEffect, useState } from 'react';
+import 'react-router-dom';
 import './style.css';
 
 import { IoIosArrowDown } from 'react-icons/io';
 import CardPostComponent from '../../../component/card-post';
 import NavBarComponent from '../../../component/navbar';
 import RodapeComponent from '../../../component/rodape';
+import api from '../../../services/api'
+import Helper from '../../../helper';
 
-export default function ListaPosts() {
+export default function ListaPosts(props) {
 
     const [cardsState, setCardsState] = useState([]);
+    const [paginacao, setPaginacao] = useState(1);
 
+    const search = props.location.search;
+    const params = new URLSearchParams(search);
+    let buscar = params.get('buscar') || "";
 
     useEffect(() => {
-        const itensRequisicao = [{
-            titulo: "O QUE É O MARKETING DE AFILIADOS?",
-            texto: "O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...",
-            link: "o-que-e-o-marketing-de-afiliados",
-            _id: "a1a1a1"
-        },
-        {
 
-            titulo: "O QUE É O MARKETING DE AFILIADOS?",
-            texto: "O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...",
-            link: "o-que-e-o-marketing-de-afiliados",
-            _id: "a2a1a1"
-        },
-        {
+        if (paginacao > 1) {
+            api.get(`/posts?_page=${paginacao}&buscar=${buscar}`)
+                .then((result) => {
+                    const cards = result.data.doc;
+                    const novosCards = cardsState.map(card => card);
 
-            titulo: "O QUE É O MARKETING DE AFILIADOS?",
-            texto: "O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...",
-            link: "o-que-e-o-marketing-de-afiliados",
-            _id: "a3a1a1"
-        },
-        {
+                    formatarCardsRequisicao(cards).forEach(card => {
+                        novosCards.push(card);
+                    })
+                    setCardsState(novosCards);
 
-            titulo: "O QUE É O MARKETING DE AFILIADOS?",
-            texto: "O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...",
-            link: "o-que-e-o-marketing-de-afiliados",
-            _id: "a4a1a1"
-        }]
-        setCardsState(conjuntoCard(itensRequisicao));
+                    if (cards.length < 4) setPaginacao(0);
+                }).catch((err) => {
+
+                });
+
+        }
+        // eslint-disable-next-line
+    }, [paginacao])
+
+    useEffect(() => {
+        api.get('/posts?_page=1&buscar=' + buscar).then((res) => {
+            const cards = res.data.doc;
+            setCardsState((formatarCardsRequisicao(cards)));
+        }).catch((err) => {
+            console.log("erro")
+        });
+        // eslint-disable-next-line
     }, []);
+
+
+    function formatarCardsRequisicao(cards, itensRequisicao = []) {
+
+        cards.forEach(card => {
+            itensRequisicao.push({
+                titulo: card.titulo,
+                texto: Helper.limitarTexto(card.conteudos[0].texto, 102) + "...",
+                link: card.link,
+                _id: card._id
+            });
+        });
+
+        return conjuntoCard(itensRequisicao);
+
+    }
 
     return (
         <>
@@ -53,14 +77,14 @@ export default function ListaPosts() {
                             <div className="row">
                                 <CardPostComponent
                                     titulo={item[0].titulo}
-                                    texto={item[0].texto}
+                                    texto={Helper.limitarTexto(item[0].texto)}
                                     link={item[0].link}
                                     blur={i % 2}
                                     grayscale={true} />
                                 {item.length === 2 ?
                                     <CardPostComponent
                                         titulo={item[1].titulo}
-                                        texto={item[1].texto}
+                                        texto={Helper.limitarTexto(item[1].texto)}
                                         link={item[1].link}
                                         blur={i % 2} />
                                     : ""
@@ -70,7 +94,9 @@ export default function ListaPosts() {
                     })
                 }
 
-                <div className="text-center bt-mais-posts botao botao-animacao" onClick={(e) => clickMaisPosts(e)}>
+                <div className="text-center bt-mais-posts botao botao-animacao" onClick={(e) => {
+                    clickMaisPosts(e);
+                }}>
                     <p>Mais Posts</p>
                     <IoIosArrowDown className="bt-mais-icon" />
                 </div>
@@ -84,38 +110,9 @@ export default function ListaPosts() {
     function clickMaisPosts(e) {
         e.preventDefault();
 
-        const reqCards = [
-            {
-                titulo: "O QUE É O MARKETING DE AFILIADOS?",
-                texto: "O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...",
-                link: "o-que-e-o-marketing-de-afiliados",
-                _id: "a5a1a1"
-            },
-            {
-                titulo: "O QUE É O MARKETING DE AFILIADOS?",
-                texto: "O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...",
-                link: "o-que-e-o-marketing-de-afiliados",
-                _id: "a6a1a1"
-            },
-            {
-                titulo: "O QUE É O MARKETING DE AFILIADOS?",
-                texto: "O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...",
-                link: "o-que-e-o-marketing-de-afiliados",
-                _id: "a7a1a1"
-            },
-            {
-                titulo: "O QUE É O MARKETING DE AFILIADOS?",
-                texto: "O marketing de afiliados é uma “parceria” entre você e o produtor de algum conteúdo, onde você divulga o produto de...",
-                link: "o-que-e-o-marketing-de-afiliados",
-                _id: "a8a1a1"
-            }
-        ];
-
-        const novosCards = cardsState.map(card => card);
-        conjuntoCard(reqCards).forEach((card) => {
-            novosCards.push(card);
-        });
-        setCardsState(novosCards);
+        if (paginacao > 0) {
+            setPaginacao(paginacao + 1);
+        }
     }
 
     function conjuntoCard(itensCard) {

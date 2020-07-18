@@ -50,9 +50,8 @@
     margin-top: 10px;
 }
 
-.modal-content{
+.modal-content {
     height: 350px;
-
 }
 
 .nav-comp .modal-body img {
@@ -77,16 +76,46 @@
     color: white;
 }
 
-.nav-comp form label{
+.nav-comp form label {
     color: var(--white);
 }
-.nav-comp .form-check{
+
+.nav-comp .form-check {
     margin-top: 20px;
 }
 
-.nav-comp .form-check input{
+.nav-comp .form-check input {
     margin-top: 6px;
 }
+
 .nav-comp .home-icon {
     margin-bottom: 2px;
+}
+
+.cursos-modal {
+    padding: 0 15px !important;
+}
+
+.cursos-modal .modal-body, .cursos-modal .modal-content {
+    height: auto !important;
+}
+
+.cursos-modal .modal-dialog {
+    max-width: 800px;
+}
+
+.cursos-modal .modal-content {
+    border: 0 !important;
+}
+
+.cursos-modal .close, .cursos-modal .close:hover {
+    color: white !important;
+}
+
+.cursos-modal #TituloModalCursos {
+    color: white;
+}
+
+.cursos-modal .modal-header {
+    background-color: black;
 }

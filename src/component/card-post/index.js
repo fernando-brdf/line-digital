@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './style.css';
+import Helper from '../../helper';
 
 
 export default function CardPostComponent(props) {
@@ -10,7 +11,8 @@ export default function CardPostComponent(props) {
         texto,
         link,
         grayscale,
-        blur
+        blur,
+        funcaoClick
     } = props,
         history = useHistory();
 
@@ -27,7 +29,12 @@ export default function CardPostComponent(props) {
     }
 
     return (
-        <div className="card-item-comp card botao col-sm mr-2 botao-foco shadow-lg" onClick={() => history.push('/posts/' + link)}>
+        <div className="card-item-comp card botao col-sm mr-2 botao-foco shadow-lg"
+            onClick={() => {
+                history.push('/posts/' + link);
+                if (funcaoClick) funcaoClick();
+                Helper.scrollTop();
+            }}>
             <img className="card-img-top" src={caminhoImg} alt="Imagem de capa do card" />
             <div className="card-body">
                 <h5 className="card-title">{titulo}</h5>

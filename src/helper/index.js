@@ -1,9 +1,29 @@
 const Helper = {
-    href(){
+    href() {
         // eslint-disable-next-line
-        return 'javascript:void(0)';
-    }
+        return '#';
+    },
 
+    limitarTexto(texto, limite) {
+
+        if (texto.length > Number(limite))
+            return texto.substr(0, limite);
+        return texto;
+    },
+
+    removerStrong(texto) {
+        let txt = texto.replace(/<strong>/g, "");
+        txt = txt.replace(/<\/strong>/g, "");
+        return txt;
+    },
+
+    rota() {
+        return window.location.pathname.split('/').pop();
+    },
+
+    scrollTop() {
+        document.getElementById("root").scrollTop = 0;
+    }
 }
 
 export default Helper;
