@@ -1,4 +1,4 @@
-##LINE DIGITAL MARKETING
+# LINE DIGITAL MARKETING
 
 Repositório do front-end do site Line Digital Marketing (https://linedigitalmarketing.com/)
 
