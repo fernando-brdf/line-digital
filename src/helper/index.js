@@ -23,6 +23,10 @@ const Helper = {
 
     scrollTop() {
         document.getElementById("root").scrollTop = 0;
+    },
+
+    minusculo(texto){
+        return String(texto).toLowerCase();
     }
 }
 
