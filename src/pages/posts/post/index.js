@@ -31,7 +31,6 @@ export default function Post() {
 
     useEffect(() => {
         buscarPost();
-        setLoading("");
         // eslint-disable-next-line
     }, []);
 
@@ -100,6 +99,8 @@ export default function Post() {
             setPropagandas(post.propagandas);
             setPostsRelacionados(<PostRelacionados posts={post.relacionados}>{() => { buscarPost() }}</PostRelacionados>);
             setPalavrasChaveState(<PalavrasChave history={history} palavrachave={post.palavras_chave} />)
+
+            setLoading("");
         }).catch(() => {
             history.push('/pagina-nao-encontrado')
         });

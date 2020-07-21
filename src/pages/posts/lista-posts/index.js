@@ -42,8 +42,6 @@ export default function ListaPosts(props) {
                 }).catch((err) => {
                     setLoading("");
                 });
-        } else {
-            setLoading("");
         }
         // eslint-disable-next-line
     }, [paginacao])
@@ -83,12 +81,12 @@ export default function ListaPosts(props) {
             <main className="conteudo list-posts">
 
                 <section hidden={(buscar) ? false : true}>
-                    <br/>
+                    <br />
                     <p>
                         <strong>Termos pesquisado: </strong> {Helper.minusculo(buscar)}
                     </p>
                 </section>
-                
+
                 <section>
                     {
                         cardsState.map((item, i) => {
