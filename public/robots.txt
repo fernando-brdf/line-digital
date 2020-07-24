@@ -1,2 +1,3 @@
 User-Agent: *
-Sitemap: https://linedigitalmarketing.com/sitemap/sitemap_index.xml
+Disallow:
+Sitemap:https://linedigitalmarketing.com/sitemap/sitemap_index.xml
