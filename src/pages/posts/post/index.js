@@ -48,7 +48,7 @@ export default function Post() {
                     <section>
                         <article>
                             <div className="conteudo-topo">
-                                <h1 className="titulo">{titulo}</h1>
+                                <h1 className="titulo">{Helper.maiusculo(titulo)}</h1>
                                 <div className="fundo img-fluid rounded" alt="fundo"></div>
                             </div>
                         </article>
@@ -87,7 +87,7 @@ export default function Post() {
         </>
     );
 
-    function buscarPost(redirect=false) {
+    function buscarPost(redirect = false) {
 
         if (redirect) {
             setLoading(<LoadingComponent />)
@@ -149,10 +149,13 @@ export default function Post() {
                 <meta property="og:description" content={descricaoTag} />
                 <meta property="og:url" content={url_atual} />
                 <meta property="og:site_name" content="Line Marketing Digital" />
+                <meta property="og:url" content="https://linedigitalmarketing.com/" />
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:description" content={descricaoTag} />
                 <meta name="twitter:title" content={tituloTag} />
+                <meta name="twitter:site" content="https://linedigitalmarketing.com/" />
+
             </Helmet>
         )
     }

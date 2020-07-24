@@ -1,13 +1,15 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
 import NavBarComponent from '../../component/navbar';
 import RodapeComponent from '../../component/rodape';
-import Helmet from 'react-helmet';
+
 import './style.css';
 
 export default function Main() {
 
-    let descricaoTag = "O mais novo site de marketing digital para você! Line Digital Marketing"
-    let tituloTag = "Line Digital Marketing";
+    let descricaoTag = "O mais novo site de marketing digital para você! Posts que irão te ajudar a sair do zero e abrir novos horizontes em marketing digital. Line Digital Marketing"
+    let tituloTag = "Line Digital Marketing | Marketing Digital do básico ao avançado.";
     return (
 
         <>
@@ -24,10 +26,11 @@ export default function Main() {
                 <meta property="og:description" content={descricaoTag} />
                 <meta property="og:url" content="https://linedigitalmarketing.com/" />
                 <meta property="og:site_name" content="Line Marketing Digital" />
-                <meta property="og:image" content="https://i.picsum.photos/id/69/200/200.jpg?hmac=njzy58--eKh-4zqh3qk1_ath7No2-VIReYjWSjxn50M" />
+                <meta property="og:image" content="%PUBLIC_URL%/img/logo.png" />
+                <meta property="og:type" content="website"/>
 
                 <meta name="twitter:card" content="summary" />
-                <meta name="twitter:image" content="https://i.picsum.photos/id/69/200/200.jpg?hmac=njzy58--eKh-4zqh3qk1_ath7No2-VIReYjWSjxn50M" />
+                <meta name="twitter:image" content="%PUBLIC_URL%/img/logo.png" />
                 <meta name="twitter:description" content={descricaoTag} />
                 <meta name="twitter:title" content={tituloTag} />
                 <meta name="twitter:site" content="https://linedigitalmarketing.com/" />

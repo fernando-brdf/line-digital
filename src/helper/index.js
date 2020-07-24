@@ -27,6 +27,10 @@ const Helper = {
 
     minusculo(texto){
         return String(texto).toLowerCase();
+    },
+
+    maiusculo(texto){
+        return String(texto).toLocaleUpperCase();
     }
 }
 
