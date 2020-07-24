@@ -1,7 +1,7 @@
 const Helper = {
     href() {
         // eslint-disable-next-line
-        return '#';
+        return '';
     },
 
     limitarTexto(texto, limite) {

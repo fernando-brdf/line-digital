@@ -11,7 +11,6 @@ export default function Main() {
     return (
 
         <>
-
             <Helmet>
                 <title>{tituloTag}</title>
                 <meta name="description" content={descricaoTag} />
@@ -25,10 +24,13 @@ export default function Main() {
                 <meta property="og:description" content={descricaoTag} />
                 <meta property="og:url" content="https://linedigitalmarketing.com/" />
                 <meta property="og:site_name" content="Line Marketing Digital" />
+                <meta property="og:image" content="https://i.picsum.photos/id/69/200/200.jpg?hmac=njzy58--eKh-4zqh3qk1_ath7No2-VIReYjWSjxn50M" />
 
                 <meta name="twitter:card" content="summary" />
+                <meta name="twitter:image" content="https://i.picsum.photos/id/69/200/200.jpg?hmac=njzy58--eKh-4zqh3qk1_ath7No2-VIReYjWSjxn50M" />
                 <meta name="twitter:description" content={descricaoTag} />
                 <meta name="twitter:title" content={tituloTag} />
+                <meta name="twitter:site" content="https://linedigitalmarketing.com/" />
             </Helmet>
             <div className="main">
 

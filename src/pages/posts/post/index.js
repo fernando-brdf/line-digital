@@ -87,7 +87,12 @@ export default function Post() {
         </>
     );
 
-    function buscarPost() {
+    function buscarPost(redirect=false) {
+
+        if (redirect) {
+            setLoading(<LoadingComponent />)
+        }
+
         api.get("posts/" + Helper.rota()).then((result) => {
             const post = result.data.doc;
             if ((result.data.length || post.length) === 0) throw new Error()
@@ -97,7 +102,7 @@ export default function Post() {
             setTitulo(post.titulo);
             setTopicos(post.conteudos);
             setPropagandas(post.propagandas);
-            setPostsRelacionados(<PostRelacionados posts={post.relacionados}>{() => { buscarPost() }}</PostRelacionados>);
+            setPostsRelacionados(<PostRelacionados posts={post.relacionados}>{() => { buscarPost(true) }}</PostRelacionados>);
             setPalavrasChaveState(<PalavrasChave history={history} palavrachave={post.palavras_chave} />)
 
             setLoading("");
