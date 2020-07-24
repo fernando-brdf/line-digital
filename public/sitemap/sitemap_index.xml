@@ -4,4 +4,8 @@
 		<loc>https://linedigitalmarketing.com/sitemap/post-sitemap1.xml</loc>
 		<lastmod>2020-07-24T00:00:00+00:00</lastmod>
 	</sitemap>
+	<sitemap>
+		<loc>https://linedigitalmarketing.com/sitemap/sitemap2.xml</loc>
+		<lastmod>2020-07-24T00:00:00+00:00</lastmod>
+	</sitemap>
 </sitemapindex>
