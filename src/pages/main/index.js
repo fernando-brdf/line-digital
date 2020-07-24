@@ -26,11 +26,11 @@ export default function Main() {
                 <meta property="og:description" content={descricaoTag} />
                 <meta property="og:url" content="https://linedigitalmarketing.com/" />
                 <meta property="og:site_name" content="Line Marketing Digital" />
-                <meta property="og:image" content="../../../public/img/logo.png" />
+                <meta property="og:image" content="/img/logo.png" />
                 <meta property="og:type" content="website" />
 
                 <meta name="twitter:card" content="summary" />
-                <meta name="twitter:image" content="../../../public/img/logo.png" />
+                <meta name="twitter:image" content="/img/logo.png" />
                 <meta name="twitter:description" content={descricaoTag} />
                 <meta name="twitter:title" content={tituloTag} />
                 <meta name="twitter:site" content="https://linedigitalmarketing.com/" />
