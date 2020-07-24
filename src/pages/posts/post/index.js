@@ -150,9 +150,9 @@ export default function Post() {
                 <meta property="og:url" content={url_atual} />
                 <meta property="og:site_name" content="Line Marketing Digital" />
                 <meta property="og:url" content="https://linedigitalmarketing.com/" />
-                <meta property="og:image" content="/img/logo.png" />
+                <meta property="og:image" content="https://linedigitalmarketing.com/img/logo.png" />
 
-                <meta name="twitter:image" content="/img/logo.png" />
+                <meta name="twitter:image" content="https://linedigitalmarketing.com/img/logo.png" />
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:description" content={descricaoTag} />
                 <meta name="twitter:title" content={tituloTag} />
