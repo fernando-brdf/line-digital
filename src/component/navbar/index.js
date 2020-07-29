@@ -129,8 +129,8 @@ function ModalCursos() {
                         <h4 className="text-center"><span role="img" aria-label='emoji'>🤑</span> Fórmula Enriquecendo Online</h4>
                         <br />
                         <p className="mb-2">Aprenda do básico ao avançado do marketing digital! Treinamento completo que te ensina como ter uma renda trabalhando <strong>somente por </strong> 📱.</p>
-                        <p className="text-center"><span role="img" aria-label='emoji'>👉</span> <a href='https://p.eduzz.com/401672?utm_source=cursos&a=60139752' target='_blank' rel='noopener noreferrer'>Clique aqui </a> e saiba mais.</p>
-                        <p className="text-center"><span role="img" aria-label='emoji'>💰</span> <a href='https://sun.eduzz.com/401672?utm_source=cursos&a=60139752' target='_blank' rel='noopener noreferrer'>Adquira o seu aqui!</a> 💰</p>
+                        <p className="text-center"><span role="img" aria-label='emoji'>👉</span> <a href='https://bit.ly/2CWFPR7' target='_blank' rel='noopener noreferrer'>Clique aqui </a> e saiba mais.</p>
+                        <p className="text-center"><span role="img" aria-label='emoji'>💰</span> <a href='https://bit.ly/39FB4Ht' target='_blank' rel='noopener noreferrer'>Adquira o seu aqui!</a> 💰</p>
                         <hr></hr>
                         <br />
                         <h4 className="text-center"><span role="img" aria-label='emoji'>😵</span> Fórmula Desperte Milionário</h4>
@@ -152,8 +152,8 @@ function ModalCursos() {
                             <li><p className='mb-0'>Como fazer campanhas de e-mail Marketing.</p></li>
                         </ul>
                         <p>Temos também grupos <strong>VIP</strong> de <strong>suporte</strong> no TELEGRAM e aulas ao vivo durante a semana para tirar dúvidas e ajudar alunos e afiliados!</p>
-                        <p className="text-center"><span role="img" aria-label='emoji'>👉</span> <a href='https://p.eduzz.com/383261?utm_source=cursos&a=60139752' target='_blank' rel='noopener noreferrer'>Clique aqui </a> e saiba mais.</p>
-                        <p className="text-center"><span role="img" aria-label='emoji'>💰</span> <a href='https://sun.eduzz.com/383261?utm_source=cursos&a=60139752' target='_blank' rel='noopener noreferrer'>Adquira o seu aqui!</a> <span role="img" aria-label='emoji'>💰</span></p>
+                        <p className="text-center"><span role="img" aria-label='emoji'>👉</span> <a href='https://bit.ly/2P40hlx' target='_blank' rel='noopener noreferrer'>Clique aqui </a> e saiba mais.</p>
+                        <p className="text-center"><span role="img" aria-label='emoji'>💰</span> <a href='https://bit.ly/2DjQ8OP' target='_blank' rel='noopener noreferrer'>Adquira o seu aqui!</a> <span role="img" aria-label='emoji'>💰</span></p>
                         <br />
                     </div>
                 </div>

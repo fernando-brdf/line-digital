@@ -25,12 +25,17 @@ const Helper = {
         document.getElementById("root").scrollTop = 0;
     },
 
-    minusculo(texto){
+    minusculo(texto) {
         return String(texto).toLowerCase();
     },
 
-    maiusculo(texto){
+    maiusculo(texto) {
         return String(texto).toLocaleUpperCase();
+    },
+
+    removerTags(texto) {
+        let txt = texto.replace(/<[\s\S]*?>/g, "");
+        return txt;
     }
 }
 

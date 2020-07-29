@@ -38,7 +38,7 @@ export default function CardPostComponent(props) {
             <img className="card-img-top" src={caminhoImg} alt="Imagem de capa do card" />
             <div className="card-body">
                 <h5 className="card-title">{titulo}</h5>
-                <p className="card-text">{texto}</p>
+                <p className="card-text">{Helper.limitarTexto(Helper.removerTags(texto),280)}</p>
             </div>
         </div>
     );

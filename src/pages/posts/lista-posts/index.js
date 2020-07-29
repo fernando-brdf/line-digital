@@ -64,7 +64,7 @@ export default function ListaPosts(props) {
         cards.forEach(card => {
             itensRequisicao.push({
                 titulo: card.titulo,
-                texto: Helper.limitarTexto(card.conteudos[0].texto, 102) + "...",
+                texto: card.conteudos[0].texto,
                 link: card.link,
                 _id: card._id
             });
@@ -94,14 +94,14 @@ export default function ListaPosts(props) {
                                 <div className="row">
                                     <CardPostComponent
                                         titulo={item[0].titulo}
-                                        texto={Helper.limitarTexto(item[0].texto)}
+                                        texto={item[0].texto}
                                         link={item[0].link}
                                         blur={i % 2}
                                         grayscale={true} />
                                     {item.length === 2 ?
                                         <CardPostComponent
                                             titulo={item[1].titulo}
-                                            texto={Helper.limitarTexto(item[1].texto)}
+                                            texto={item[1].texto}
                                             link={item[1].link}
                                             blur={i % 2} />
                                         : ""
